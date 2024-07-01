@@ -1,0 +1,26 @@
+#include <iostream>
+#include<cstring>
+#include<cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int vetor [10];
+    int soma=0;//neste caso voce soma 1 na soma para que ela armazene o valor de todos os numeros digitados.
+
+    for(int i=0;i<10;i++){
+        cout<<"Digite um número: ";
+        cin>>vetor[i];
+        soma=soma+vetor[i];
+    }
+
+    for(int i=0;i<10;i++){
+    cout<<"--"<<vetor[i];
+    }
+    cout<<endl;
+    cout<<"A soma é de: "<<soma<<endl<<endl;
+
+
+    return 0;
+}
