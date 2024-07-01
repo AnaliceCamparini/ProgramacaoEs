@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include<iostream> 
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    char nome[20],natural[30];
+    int idade;
+    cout << "Digite seu nome: ";
+    cin >> nome;
+    cout<<"\n Digite a cidade que voce nasceu: ";
+    cin >> natural;
+    cout<<"\nDigite seu idade: ";
+    cin>>idade;
+    cout<<"\nVoce nasceu em: "<<natural<<"\n Seu nome é: "<<nome<< "\nE voce tem: "<<idade<< "anos.";
+    
+    
+    return 0;
+}
