@@ -1,0 +1,48 @@
+#include <iostream>
+#include<cstring>
+
+using namespace std;
+
+
+int main()
+{
+
+    int imc,i;
+
+    cout<<"Quantos IMC's vao ser caculados? Informe: ";
+    cin>>imc;
+    fflush(stdin);
+
+    struct conta{
+    float peso,altura,imcs;
+    string nome;
+
+    }c1[imc];
+
+    for(i=0;i<imc;i++){
+        cout<<"INFORME O SEU NOME: ";
+        getline(cin,c1[i].nome);
+        fflush(stdin);
+        cout<<"INFORME SEU PESO: ";
+        cin>> c1[i].peso;
+        fflush(stdin);
+        cout<<"INFORME A SUA ALTURA: ";
+        cin>>c1[i].altura;
+        fflush(stdin);
+        c1[i].imcs=c1[i].peso/(c1[i].altura*c1[i].altura);
+        cout<<endl;
+
+
+    }
+
+    cout<<"---------------------------------------------------"<<endl;
+
+    for(i=0;i<imc;i++){
+        cout<<"NOME: "<<c1[i].nome<<endl;
+        cout<<"PESO: "<<c1[i].peso<<endl;
+        cout<<"ALTURA: "<<c1[i].altura<<endl;
+        cout<<"IMC: "<<c1[i].imcs<<endl;
+        cout<<endl;
+    }
+    return 0;
+}
