@@ -1,0 +1,28 @@
+
+
+#include <cstdlib>
+#include<iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int ouro,prata,bronze,total;
+    
+    cout<<"Insira quantas medalhas de ouro o Brasil ja ganhou nas olimpiadas: "<<endl;
+    cin>>ouro;
+    
+    cout<<"Insira quantas medalhas de prata o Brasil ja ganhou nas olimpiadas: "<<endl;
+    cin>>prata;
+    
+    cout<<"Insira quantas medalhas de bronze o Brasil ja ganhou nas olimpiadas: "<<endl;
+    cin>>bronze;
+    
+    total=ouro+prata+bronze;
+    
+    cout<<"O total de medalhas ganhas nas olimpiadas pelo Brasil foi de: "<<total<<endl<<endl;
+    
+    return 0;
+}
