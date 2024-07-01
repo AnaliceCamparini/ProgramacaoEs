@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int cont,escolha,n1,n2,mult,soma,sub,div;
+    cont='C';
+    while(cont=='C'){
+        cout<<"1-Soma"<<endl;
+        cout<<"2-Subtração"<<endl;
+        cout<<"3-Multiplicação"<<endl;
+        cout<<"4-Divisão"<<endl;
+
+        cout<<"Escolha qual operação quer escolher: ";
+        cin>>escolha;
+
+        switch(escolha){
+        case 1:
+            cout<<"Informe o primeiro numero: ";
+            cin>>n1;
+            cout<<"Informe o segundo numero: ";
+            cin>>n2;
+            soma=n1+n2;
+            cout<<"O resultado é de: "<<soma<<endl<<endl;
+            break;
+        case 2:
+            cout<<"Informe o primeiro numero: ";
+            cin>>n1;
+            cout<<"Informe o segundo numero: ";
+            cin>>n2;
+            sub=n1-n2;
+            cout<<"O resultado é de: "<<sub<<endl<<endl;
+            break;
+        case 3:
+            cout<<"Informe o primeiro numero: ";
+            cin>>n1;
+            cout<<"Informe o segundo numero: ";
+            cin>>n2;
+            mult=n1*n2;
+            cout<<"O resultado é de: "<<mult<<endl<<endl;
+            break;
+        case 4:
+            cout<<"Informe o primeiro numero: ";
+            cin>>n1;
+            cout<<"Informe o segundo numero: ";
+            cin>>n2;
+            div=n1/n2;
+            cout<<"O resultado é de: "<<div<<endl<<endl;
+            break;
+        default:
+            cout<<"Escolha inválida!";
+
+        }
+        cout<<"Deseja continuar: ";
+        cin>>cont;
+        cont=cont+1;
+    }
+
+    return 0;
+}
