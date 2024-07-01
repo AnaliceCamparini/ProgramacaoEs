@@ -1,0 +1,31 @@
+#include <cstdlib>
+#include<iostream>
+
+
+using namespace std;
+
+/*
+ *
+ */
+int main(int argc, char** argv) {
+   setlocale(LC_ALL,"Portuguese");
+   char nome[20];
+   float dist,velo,hora;
+
+   cout<<"**INFORMAÇÕES SOBRE SUA CORRIDA***";
+   cout<<"\nPor favor insira seu nome: ";
+   cin>>(nome);
+
+   cout<<"\nPor favor insira quantos quilômetros você percorreu: ";
+   cin>>(dist);
+
+   cout<<"\nQual foi o tempo gasto em minutos que você percorreu: ";
+   cin>>(hora);
+
+   velo=(dist/(hora/60));
+   cout<<nome<<",você percorreu "<<dist<<" em "<<hora<<",sua velocidade média foi de: "<<velo<<"\n";
+
+   return 0;
+
+
+}
