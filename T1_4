@@ -1,0 +1,26 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    char produto[20];
+    float valor1,valorF,desconto;
+    
+    cout<<"Insira o nome do produto: ";
+    cin>>produto;
+    
+    cout<<"Insira o valor do produto: ";
+    cin>>valor1;
+    
+    desconto=valor1 * 0.13;
+    valorF=valor1-desconto;
+    
+    cout<<"O nome do produto: "<<produto<<endl;
+    cout<<"O valor inicial: "<<valor1<<endl;
+    cout<<"O desconto foi de: R$"<<desconto<<endl;
+    cout<<"O valor final foi de: R$"<<valorF<<endl;
+    return 0;
+}
