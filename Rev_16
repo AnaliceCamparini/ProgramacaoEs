@@ -1,0 +1,49 @@
+#include <iostream>
+#include<cstring>
+#include<fstream>
+
+using namespace std;
+
+
+int main()
+{
+    ofstream arq;
+    int cli,i;
+    arq.open("PET.txt",ios::app);
+
+
+    cout<<"Quantos clientes serão cadastrados? Informe: ";
+    cin>>cli;
+    fflush(stdin);
+
+    struct cadastro{
+    int id,rg,tel;
+    char sex[2];
+    string nome,nomeD,esp;
+
+    }c1[cli];
+
+    for(i=0;i<cli;i++){
+        cout<<"INFORME O NOME DO PET: ";
+        getline(cin,c1[i].nome);
+        cout<<"A ESPECIE DO PET: ";
+        getline(cin,c1[i].esp);
+        cout<<"INFORME O SEXO DO PET(F-FEMIA|M-MACHO): ";
+        cin>>c1[i].sex;
+        cout<<"INFORME A IDADE DO PET: ";
+        cin>>c1[i].id;
+        fflush(stdin);
+        cout<<"INFORME O NOME DO DONO DO PET: ";
+        getline(cin,c1[i].nomeD);
+        cout<<"INFORME O RG DO DONO DO PET: ";
+        cin>>c1[i].rg;
+        cout<<"INFORME O TELEFONE DO DONO DO PET(tudo junto): ";
+        cin>>c1[i].tel;
+        fflush(stdin);
+        cout<<endl;
+
+
+    }
+     arq.close();
+    return 0;
+}
