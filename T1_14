@@ -1,0 +1,33 @@
+#include <cstdlib>
+#include<iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+int media2,filho,fim=0;
+float media1,sal,soma=0,maior; 
+    for(int i=0;i<15;i++){
+        cout<<"Insira seu salario: ";
+        cin>>sal;
+        
+        cout<<"Quantidade de pessoas na sua residencia: ";
+        cin>>filho;
+       
+        soma=sal+soma;
+        fim=filho+fim;
+        
+        if(maior<sal){
+            maior=sal;
+        }
+    }
+    media1=soma/15;
+    media2=fim/15;
+    cout<<"O total da media dos salarios: "<<media1<<endl;
+    cout<<"O total da media dos filhos: "<<media2<<endl;
+    cout<<"O valor do maior salario foi: "<<maior<<endl;
+    
+    return 0;
+}
