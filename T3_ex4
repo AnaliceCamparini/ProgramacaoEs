@@ -1,0 +1,42 @@
+#include <iostream>
+#include<locale>
+#include <cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+   setlocale(LC_ALL,"Portuguese");
+
+   cout<<"*********LISTA DE TIMES*********\n";
+   cout<<"1-SÃO PAULO\n";
+   cout<<"2-PALMEIRAS\n";
+   cout<<"3-CORINTHIANS\n";
+   cout<<"4-SANTOS\n\n";
+
+   int time;
+
+   cout<<"Insira seu time favorito desta lista(número): ";
+   cin>>time;
+
+   switch(time){
+          case 1:
+            cout<<"Seu time favorito é: São Paulo!!!(ótima escolha <3)\n\n";
+          break;
+
+          case 2:
+            cout<<"Seu time favorito é: Palmeiras!\n\n";
+          break;
+
+          case 3:
+            cout<<"Seu time favorito é:Corinthians!\n\n";
+          break;
+
+          case 4:
+            cout<<"Seu time favorito é:Santos!\n\n";
+          break;
+
+          default:
+            cout<<"Não existe essa opção!\n\n";
+   }
+    return 0;
+}
