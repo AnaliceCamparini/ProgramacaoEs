@@ -1,0 +1,23 @@
+
+#include <cstdlib>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float vetor[5];
+    float media;
+    int i;
+    
+    for(i=0;i<5;i++){
+        cout<<"Digite sua "<<(i+1)<< " nota: ";
+        cin>>vetor[i];
+        media += vetor[i];
+    }
+    cout<<"A sua mÃ©dia total foi de: "<<(media/5)<<endl<<endl;
+    
+    return 0;
+}
