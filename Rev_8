@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int i,mult=0;
+    int vetor[8];
+
+    for(i=0;i<8;i++){
+        cout<<"Digite um numero: ";
+        cin>>vetor[i];
+    }
+
+
+    for(i=0;i<8;i++){
+    cout<<"-"<<vetor[i]<<endl;
+        if(vetor[i]% 3==0){
+            mult++;
+        }
+    }
+
+    cout<<"Multiplos de 3: "<<mult<<endl;
+
+    return 0;
+}
