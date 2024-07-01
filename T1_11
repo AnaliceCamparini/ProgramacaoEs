@@ -1,0 +1,19 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int num,cont=0;
+    for(int i=0;i<=15;i++){
+        cout<<"Insira um número: ";
+        cin>>num;
+        
+        if(num<0)
+            cont++;
+    }
+    cout<<"O total de números negativos foi de: "<<cont<<endl;
+    return 0;
+}
