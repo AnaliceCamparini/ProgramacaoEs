@@ -1,0 +1,24 @@
+
+#include<iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int num=5;
+    char vetor[num];
+    
+    for(int i=0;i<num;i++){
+        cout<<"Digite uma letra: ";
+        cin>>vetor[i];
+    }
+    for(int i=0;i<num;i++){
+        cout<<"\nA letra digitada na posiÃ§Ã£o "<<i<<" do vetor Ã©: "<<vetor[i]<<endl;
+    }
+    
+    cout<<"O vetor armazena as letras: "<<vetor<<endl;
+    cout<<"O a segunda posicao do vetor armazena a letra:"<<vetor[1]<<endl<<endl;
+    return 0;
+}
