@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float raio,area,peri;
+    
+    cout<<"Digite o raio de um circulo: ";
+    cin>>raio;
+    
+    peri = 2 * M_PI * raio;
+    area= M_PI * raio;
+    
+    cout<<"O valor do perimetro: "<<peri<<endl;
+    cout<<"O valor da area: "<<area<<endl;
+    
+    return 0;
+}
