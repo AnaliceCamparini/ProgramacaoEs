@@ -1,0 +1,42 @@
+#include <iostream>
+#include<cstdlib>
+#include<locale>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+   setlocale(LC_ALL,"Portuguese");
+
+   char nome[20];
+   float sal,IRPF;
+
+   cout<<"Insira o seu nome: ";
+   cin>>nome;
+
+   cout<<"Insira o seu salário: ";
+   cin>>sal;
+
+   if(sal>=2000 && sal<=2999){
+    IRPF=sal*0.15;
+    cout<<nome<<",você deverá pagar: "<<IRPF<<endl;
+   }
+   else {
+    cout<<nome<<",você tem inseção de pagamento do IRPF."<<endl;
+
+
+   if(sal>=3000 && sal<=4999){
+    IRPF=sal*0.20;
+    cout<<nome<<",você deverá pagar: "<<IRPF<<endl;
+   }
+   if(sal>=5000 && sal<=9999){
+    IRPF=sal*0.23;
+    cout<<nome<<",você deverá pagar: "<<IRPF<<endl;
+   }
+   if(sal>=10000){
+    IRPF=sal*0.27;
+    cout<<nome<<",você deverá pagar: "<<IRPF<<endl;
+   }
+   }
+
+   return 0;
+   }
