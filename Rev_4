@@ -1,0 +1,34 @@
+
+
+#include <cstdlib>
+#include<iostream>
+#include<locale>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    setlocale(LC_ALL,"Portuguese");
+    int idade;
+    
+    cout<<"Informe quantos anos tem: ";
+    cin>>idade;
+    
+    cout<<endl<<endl;
+    
+    if(idade>=65){
+        cout<<"CAIXA - 1"<<endl;
+        cout<<"Por favor, se dirija ate o caixa preferencial!";
+        cout<<endl<<endl;
+    }
+    else{
+        cout<<"CAIXA - 2"<<endl;
+        cout<<"CAIXA - 3"<<endl;
+        cout<<"CAIXA - 4"<<endl;
+        cout<<"Por favor, se dirija ate os caixas convencionais!";
+        cout<<endl<<endl;
+        
+    }
+    return 0;
+}
