@@ -1,0 +1,14 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    cout<<"Meu nome é Analice!";
+    cout<<"Sou de curso de Sistemas de Informação!";
+    cout<<"Estou no primeiro ano.";
+    cout<<"Gosto de programação!";
+    return 0;
+}
