@@ -1,0 +1,24 @@
+
+#include <cstdlib>
+#include<iostream>
+#include<locale>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    setlocale(LC_ALL,"Portuguese");
+    cout<<"PES-ProgramaÃ§Ã£o Estrutura-Turma A"<<endl<<endl;
+    
+    cout<<"Prova Bimestral."<<endl<<endl;
+    
+    cout<<"Valor-4 pontos"<<endl<<endl;
+    
+    cout<<"Aluno:Analice Alquaz Alves Camparini"<<endl;
+    cout<<"Matricula: VP3027597"<<endl<<endl;
+    
+  
+    
+    return 0;
+}
