@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char nome[20];
+    int idade,soma;
+    for(int i=1;i<=5;i++){
+        cout<<"Informe seu primeiro nome: ";
+        cin>>nome;
+        cout<<"Informe sua idade: ";
+        cin>>idade;
+        soma=soma+idade;
+    }
+    cout<<"A soma de todas as idades foi de: "<<soma<<endl<<endl;
+    return 0;
+}
