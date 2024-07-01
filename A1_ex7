@@ -1,0 +1,30 @@
+#include <cstdlib>
+#include<iostream>
+#include<locale.h>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    setlocale(LC_ALL, "Portuguese"); 
+    float media;
+    
+    cout<<"Digite a sua media: ";
+    cin>>media;
+    
+    if(media>=0 && media<=10){
+        cout<< "A media e valida!!\n";
+        if(media>=6){
+            cout<<"Aluno foi aprovado!\n\n";
+        }
+        else{
+            cout<<"Aluno foi reprovado!\n\n";
+        }
+    }
+    else{
+        cout<<"Media invalida!\n";
+    }
+    return 0;
+}
