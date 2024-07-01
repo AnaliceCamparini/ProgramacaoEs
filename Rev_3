@@ -1,0 +1,63 @@
+
+#include <cstdlib>
+#include<iostream>
+#include<locale>
+#include<iomanip>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    setlocale(LC_ALL,"Portuguese");
+    
+    int esc;
+    float n1,n2,total;
+   
+    
+    cout<<"********MENU DE ESCOLHA********"<<endl<<endl;
+    cout<<"1-ADIÃ‡Ã‚O"<<endl;
+    cout<<"2-SUBTRACAO"<<endl;
+    cout<<"3-MULTIPLICACAO"<<endl;
+    cout<<"4-DIVISAO"<<endl;
+    cout<<"5-SAIR"<<endl<<endl<<endl;
+        
+    cout<<"Escolha qual desta opÃ§Ãµes voce deseja: ";
+    cin>>esc;
+    cout<<endl<<endl;
+    
+    cout<<"Informe um numero: ";
+    cin>>n1;
+    cout<<endl<<endl;
+    
+    cout<<"Informe o segundo numero: ";
+    cin>>n2;
+    cout<<endl<<endl;
+   
+    
+    switch(esc){
+        case 1:
+           total = n1+n2;
+           cout<<"O resultado da soma foi de: "<<total<<endl<<endl;
+        break;
+        case 2:
+           total = n1-n2;
+           cout<<"O resultado da subtraÃ§Ã£o foi de: "<<total<<endl<<endl;
+        break;
+        case 3:
+           total = n1*n2;
+           cout<<"O resultado da soma foi de: "<<total<<endl<<endl;
+        break;
+        case 4:
+           total = n1/n2;
+           cout<<"O resultado da soma foi de: "<<total<<setprecision(2)<<endl<<endl;
+        break;
+        case 5:
+            cout<<"Voce desejou acabar o programa!"<<endl<<endl;
+        default:
+            cout<<"OpÃ§Ã£o InvÃ¡lida"<<endl<<endl;
+    }
+    
+
+    return 0;
+}
