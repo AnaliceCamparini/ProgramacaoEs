@@ -1,0 +1,21 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int num,div,par,impar;
+    
+    cout<<"Insira um numero: ";
+    cin>>num;
+    
+    if(num%2==0){
+        cout<<"O valor indicado é par!"<<endl;
+    }
+    else{
+        cout<<"O valor indicado é impar!"<<endl;
+    }
+    return 0;
+}
