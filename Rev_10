@@ -1,0 +1,44 @@
+#include <iostream>
+#include<cstring>
+#include<cstdlib>
+
+using namespace std;
+
+int main()
+{
+    float vetor1 [5];
+    float vetor2[5];
+    float media[5];
+
+
+    for(int i=0;i<5;i++){
+        cout<<"Nota P1 do "<<i+1<<" aluno: ";
+        cin>>vetor1[i];
+        cout<<"Nota P2 do "<<i+1<<" aluno: ";
+        cin>>vetor2[i];
+        cout<<endl;
+    }
+    for(int i=0;i<5;i++){
+        media[i]=(vetor1[i]+vetor2[i])/2;
+        }
+    cout<<"Situação dos Alunos: "<<endl;
+
+    for(int i=0;i<5;i++){
+       cout<<"Aluno: "<<i+1<<"P1= "<<vetor1[i]<<" P2= "<<vetor2[i]<<"\n";
+       cout<<"Média: "<<media[i]<<"\n";
+
+
+       if(media[i]>=6.0){
+        cout<<"Aluno APROVADO!\n";
+       }
+      else{
+        cout<<"Aluno REPROVADO!\n";
+      }
+    }
+
+    cout<<endl<<endl;
+
+
+
+    return 0;
+}
