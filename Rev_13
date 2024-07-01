@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int matriz[6][6];
+    int i,j;
+
+    for(i=0;i<6;i++){
+        for(j=0;j<6;j++){
+            cout<<"Insira um número na posicao" <<i+1<<","<<j+i<<": ";
+            cin>>matriz[i][j];
+        }
+    }
+    for(i=0;i<6;i++){
+        for(j=0;j<6;j++){
+            cout<<matriz[i][j]<<"\t";
+
+        }
+
+        cout<<endl;
+    }
+    cout<<"A diagonal inversa: "<<endl;
+    for(i=0;i<6;i++){
+        for(j=0;j<6;j++){
+            if(j == 5-i){
+            cout<<matriz[i][j]<<endl;
+            }
+
+            else{
+
+                cout<<"  \t";
+                if(j==5){
+                    cout<<endl;
+                }
+
+            }
+
+        }
+
+}
+
+    return 0;
+}
