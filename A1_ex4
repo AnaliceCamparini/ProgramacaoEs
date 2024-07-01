@@ -1,0 +1,40 @@
+#include <cstdlib>
+#include<iostream>
+#include<locale.h>
+#include<iomanip>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    setlocale(LC_ALL, "Portuguese");
+    float num1,num2,num3,soma,multi,sub,div;
+    int resto,num4,num5;
+    
+    cout<<"Este programa irá executar algumas contas matemáticas."<< endl;
+    cout<<"Cinco números serão necessarios para tais execuções."<<endl<<endl;
+    cout<<"Digite o primeiro numero: "<<endl;
+    cin>>num1;
+    cout<<"Digite o segundo numero: "<<endl;
+    cin>>num2;
+    cout<<"Digite o terceiro numero: "<<endl;
+    cin>>num3;
+    cout<<"Digite o quarto numero: "<<endl;
+    cin>>num4;
+    cout<<"Digite o quinto numero: "<<endl;
+    cin>>num5;
+    soma=num1+num2;
+    cout<<"A soma dos primeiro número com o segundo é: "<<soma<<endl;
+    sub=num3-num1;
+    cout<<"A subtração do terceiro número com o primeiro é: "<<sub<<endl;
+    div=num2/num1;
+    cout<<"A divisão do número dois pelo número 1 é: "<<setprecision(2)<<div<<endl;
+    multi=num1*num2;
+    cout<<"A multiplicação dos números é: "<<multi<<endl;
+    resto=num4% num5;
+    cout<<"O resto da divisão do quarto numero pelo quinto é: "<<resto<<endl;
+    
+    
+    return 0;
+}
