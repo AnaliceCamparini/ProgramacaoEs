@@ -1,0 +1,18 @@
+#include <cstdlib>
+
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int salario=1000;
+    int comissao=5;
+    float valorV,salFinal;
+    cout<<"Escreva o valor de vendas neste mes: ";
+    cin >>valorV;
+    salFinal = salario+((valorV * comissao)/100) ;
+    cout << "O salario final: \n" << salFinal << "Reais.\n";
+    return 0;
+}
