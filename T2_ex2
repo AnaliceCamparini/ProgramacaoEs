@@ -1,0 +1,33 @@
+#include <iostream>
+#include<locale>
+#include<cstdlib>
+
+using namespace std;
+
+/*
+ *
+ */
+int main(int argc, char** argv) {
+   setlocale(LC_ALL,"Portuguese");
+   char nome[20];
+   float n1,n2,n3,notaF;
+
+   cout<<"Digite seu nome: "<<endl;
+   cin>>nome;
+
+   cout<<"Digite sua primeira nota: "<<endl;
+   cin>>n1;
+
+   cout<<"Digite sua segunda nota: "<<endl;
+   cin>>n2;
+
+   cout<<"Digite sua terceira nota: "<<endl;
+   cin>>n3;
+
+   notaF=(n1+n2+n3)/3;
+
+   cout<<"A média das suas notas é:  "<<notaF<<endl;
+
+
+
+   }
