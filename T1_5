@@ -1,0 +1,23 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int valor;
+    
+    cout<<"Insira um valor de um numero, podendo ser negativo ou positivo: ";
+    cin>>valor;
+    
+    if(valor>=0){
+        cout<<"O valor que voce digitou foi:"<<valor<<endl;
+        cout<<"Ele é positivo!"<<endl<<endl;
+    }
+    else{
+       cout<<"O valor que voce digitou foi:"<<valor<<endl;
+        cout<<"Ele é negativo!"<<endl<<endl; 
+    }
+    return 0;
+}
