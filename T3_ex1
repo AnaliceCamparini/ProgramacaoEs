@@ -1,0 +1,33 @@
+
+#include <cstdlib>
+#include<iostream>
+#include<locale>
+
+using namespace std;
+
+/*
+ *
+ */
+int main(int argc, char** argv) {
+   setlocale(LC_ALL,"Portuguese");
+
+   int n1,n2;
+
+   cout<<"Insira um número: ";
+   cin>>n1;
+
+   cout<<"Insira outro número: ";
+   cin>>n2;
+
+   if (n1>=n2){
+    cout<<"O maior número é: "<<n1<<endl;
+   }
+
+   else{
+    cout<<"O maior número é: "<<n2<<endl;
+   }
+
+   return 0;
+
+
+}
