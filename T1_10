@@ -1,0 +1,71 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int matricula,nota1,nota2,nota3,media;
+    
+    cout<<"Insira sua matricula(sem o VP): ";
+    cin>>matricula;
+    cout<<"Insira sua primeira nota: ";
+    cin>>nota1;
+    cout<<"Insira sua segunda nota: ";
+    cin>>nota2;
+    cout<<"Insira sua terceira nota: ";
+    cin>>nota3;
+
+    media=(((nota1+nota2)*2)+(nota3*3))/6;
+    
+    if(media>=9){
+        cout<<"Sua matricula:"<<matricula<<endl;
+        cout<<"Sua primeira nota:"<<nota1<<endl;
+        cout<<"Sua segunda nota:"<<nota2<<endl;
+        cout<<"Sua terceira nota:"<<nota3<<endl;
+        cout<<"A sua media foi de:"<<media<<",por isso voce esta no conceito A!"<<endl;
+        cout<<"APROVADO!"<<endl;    
+    }else{
+        if(media>=7.5 && media<9){
+            cout<<"Sua matricula:"<<matricula<<endl;
+            cout<<"Sua primeira nota:"<<nota1<<endl;
+            cout<<"Sua segunda nota:"<<nota2<<endl;
+            cout<<"Sua terceira nota:"<<nota3<<endl;
+            cout<<"A sua media foi de:"<<media<<",por isso voce esta no conceito B!"<<endl;
+            cout<<"APROVADO!"<<endl; 
+        }else{
+       
+                if(media>=6 && media<7.5){
+                cout<<"Sua matricula:"<<matricula<<endl;
+                cout<<"Sua primeira nota:"<<nota1<<endl;
+                cout<<"Sua segunda nota:"<<nota2<<endl;
+                cout<<"Sua terceira nota:"<<nota3<<endl;
+                cout<<"A sua media foi de:"<<media<<",por isso voce esta no conceito C!"<<endl;
+                cout<<"APROVADO!"<<endl; 
+                }
+                
+                else{
+        
+                    if(media>=4 && media<6){
+                        cout<<"Sua matricula:"<<matricula<<endl;
+                        cout<<"Sua primeira nota:"<<nota1<<endl;
+                        cout<<"Sua segunda nota:"<<nota2<<endl;
+                        cout<<"Sua terceira nota:"<<nota3<<endl;
+                        cout<<"A sua media foi de:"<<media<<",por isso voce esta no conceito D!"<<endl;
+                        cout<<"REPROVADO!"<<endl; }
+ 
+              
+                    else{
+                       cout<<"Sua matricula:"<<matricula<<endl;
+                       cout<<"Sua primeira nota:"<<nota1<<endl;
+                       cout<<"Sua segunda nota:"<<nota2<<endl;
+                       cout<<"Sua terceira nota:"<<nota3<<endl;
+                       cout<<"A sua media foi de:"<<media<<",por isso voce esta no conceito E!"<<endl;
+                       cout<<"REPROVADO!"<<endl;   
+                       }
+                }
+        }
+    }
+    return 0;
+}
