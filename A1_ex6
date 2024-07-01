@@ -1,0 +1,27 @@
+#include <cstdlib>
+#include<iostream>
+#include<locale>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    setlocale(LC_ALL,"Portuguese");
+    int golsSP,golsPM;
+    
+    cout<<"\n****Placar do Jogo São Paulo VS Palmeiras****\n";
+    cout<<"Digite a quantidade de gols que o São Paulo fez: ";
+    cin>>golsSP;
+    cout<<"Digite a quantidade de gols que o Palmeiras fez: ";
+    cin>>golsPM;
+    
+    if(golsSP>golsPM){
+        cout<<"O vencedor é o São paulo,com "<<golsSP<<" gols \n";
+    }
+    else {
+        cout<<"O vencedor é o Palmeiras!\n";
+    }
+    return 0;
+}
