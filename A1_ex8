@@ -1,0 +1,41 @@
+#include <cstdlib>
+#include<iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int opc;
+    
+    cout<<"********PRATOS DO CARDAPIO*******\n\n";
+    cout<<"Digite 1 para o PRATO DO DIA\n";
+    cout<<"Digite 2 para LASANHA\n";
+    cout<<"Digite 3 para PICANHA GRELHADA\n";
+    cout<<"Digite 4 para SALADA SIMPLES\n\n";
+    
+    cout<<"Escolha uma das opcoes: ";
+    cin>>opc;
+    
+    switch(opc){
+        case 1:
+            cout<<"Prato do dia: 17 reais!\n";
+            break;
+        case 2 :
+            cout<<"Lasanha: 17 reais\n";
+            break;
+        case 3:
+            cout<<"Picanha Grelhada: 21.90 reais\n";
+            break;
+        case 4:
+            cout<<"Salada simples: 7.90 reais\n";
+            break;
+    default:
+            cout<<"Opção invalida!";
+                    
+    }
+    
+    
+    return 0;
+}
