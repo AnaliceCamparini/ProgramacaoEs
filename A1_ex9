@@ -1,0 +1,40 @@
+#include <cstdlib>
+#include<iostream>
+#include<cctype>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    char bolo[1];
+
+    cout<<"********PRATOS DO CARDAPIO*******\n\n";
+    cout<<"Digite A para o bolo de amendoim\n";
+    cout<<"Digite B para bolo de chocolate\n";
+    cout<<"Digite C para bolo de banana\n";
+    cout<<"Digite D para bolo de fuba\n\n";
+    
+    cout<<"Escolha uma das opcoes: ";
+    cin>> bolo;
+    bolo = toupper(bolo);
+    
+    switch (bolo){
+        case 'A':
+            cout<<"Bolo de amendoim: 11 reais!\n";
+            break;
+        case 'B':
+            cout<<"Bolo de chocolate: 17 reais\n";
+            break;
+        case 'C':
+            cout<<"Bolo de banana: 10 reais\n";
+            break; 
+        case 'D':
+            cout<<"Bolo de fuba: 10 reais\n";
+            break;
+    default:
+            cout<<"Opção invalida!";
+    }
+    return 0;
+ }
