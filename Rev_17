@@ -1,0 +1,21 @@
+
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+float imc(float, float );
+int main(int argc, char** argv) {
+    int a,b,c;
+
+    cout<<"Qual sua altura: ";
+    cin>>a;
+    cout<<"Qual seu peso: ";
+    cin>>b;
+    cout<<"Seu IMC Ã© de: "<<imc(a,b)<<endl;
+    return 0;
+}
+float imc(float alt, float peso){
+    float total;
+    total=peso/(alt*alt);
+    return total;
+}
