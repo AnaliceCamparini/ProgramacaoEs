@@ -1,0 +1,17 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int num1,num2;
+    cout<<"Digite dois numeros: "<<endl;
+    cin>>num1>>num2;
+    cout << "A negação do primeiro num e: "<< !num1<<endl;
+    cout<<"A op.AND entre o primeiro numero e o segundo e: "<<(num1&&num2)<<endl;
+    cout<<"A op.OR entre o primeiro num e o segundo e: "<<(num1||num2)<<endl;
+    
+    return 0;
+}
