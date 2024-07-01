@@ -1,0 +1,24 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+int cont=0,media,num,soma=0;
+    for(int i=0;i<20;i++){
+        cout<<"Insira um número: ";
+        cin>>num;
+        
+        if(num%2==0){
+            soma= num + soma;
+            cont++;
+        }
+        
+    }
+    media=soma/cont;
+    cout<<"O total da media dos numeros pares foi: "<<media<<endl;
+    
+    return 0;
+}
