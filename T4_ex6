@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int soma,i;
+    for ( i=100;i<=200;i+=2){
+    cout<<"Numero: "<<i<<endl;
+     soma=soma+i;
+ }
+
+    cout<<"O valor da soma de todos os numeros foi: "<<soma<<endl<<endl;
+}
