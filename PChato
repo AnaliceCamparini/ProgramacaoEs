@@ -1,0 +1,105 @@
+#include <iostream>
+#include <locale>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    string nome,art;
+    int num,shw,s;
+    int esc;
+
+    setlocale(LC_ALL, "Portuguese");
+
+    cout << "Olá, meu nome é Analice! Hoje irei fazer algumas perguntas para voce relacionadas a musica, tudo bem? " << endl;
+
+    cout << "Qual é o seu artista favorito? ";
+    getline(cin, nome);
+    cout <<endl<< "Que legal! " <<nome << ", é(são) um artista(s) muito bom(ns)!Vamos seguir?"<<endl<<endl;
+
+
+    cout << "Agora vamos falar de estilo de musica!";
+    cout << "Qual desses é o seu favorito?" << endl;
+    cout<<"1-SERTANEJO!"<<endl;
+    cout<<"2-FUNK"<<endl;
+    cout<<"3-INTERNACIONAL"<<endl;
+    cout<<"4-POP"<<endl;
+    cout<<"5-KPOP"<<endl;
+    cout<<"6-ROCK"<<endl;
+    cout<<"7-RAP/TRAPPER"<<endl;
+    cout<<"8-OUTRO"<<endl<<endl;
+    cout<<"Informe qual: ";
+    cin >> num;
+    switch(num)
+    {
+        case 1:
+             cout<<"Que legal!Sabia que o SERTANEJO é muito famoso no Brasil!"<<endl<<endl;
+        break;
+        case 2:
+            cout << "FUNK? Sendo sincero, seu gosto musical não é muito bom!" << endl;
+        break;
+        case 3:
+            cout << "INTERNACIONAL é bem ecletico!" << endl;
+        break;
+        case 4:
+            cout << "POP???? MUITO BOM GOSTO!" << endl;
+        break;
+        case 5:
+            cout << "O KPOP é um estilo que esta crescendo muito atualmente, sabia?" << endl;
+        break;
+        case 6:
+            cout << "ROCK'N ROLL!!!!!!!!" << endl;
+        break;
+        case 7:
+            cout << "No Brasil o RAP/TRAPPER esta crescendo bastante!" << endl;
+        break;
+        case 8:
+            cout << "Gosto difrente é bom, sabia?" << endl;
+        break;
+
+        default:
+            cout << "Você indicou uma opção que não existe!" << endl;
+    }
+
+
+    cout << "Você já foi em algum show? "<<endl<<endl;
+    cout << "1 - Sim." << endl;
+    cout << "2 - Não" << endl;
+    cout<<"Indique: ";
+    cin >> shw;
+
+    if (shw == 1){
+        cout << "Que legal!" << endl;
+        cout<<"Quantos foram os shows: ";
+        cin>>s;
+        for(int i=0;i<=s;++i){
+           cout<<"Artista: ";
+           getline(cin, art);
+        }
+    }
+        else if (shw == 2){
+            cout << "Que pena!" << endl;
+            cout<<"Quantos shows voce gostaria de ir muito?: ";
+            cin>>s;
+        for(int i=0;i<=s;++i){
+           cout<<"Artista: ";
+           getline(cin, art);
+        }
+    }
+
+
+    cout<<"Bom, chegamos ao final!Você gostou da pesquisa?(1-Sim|2-Nao): ";
+    cin>>esc;
+
+    if(esc==1){
+        cout<<"Que bom, fico muito lisonjeada!!"<<endl<<endl;
+    }
+    else{
+        cout<<"Tudo bem! Da proxima vez irei aperfeiçoar melhor o meu programa!"<<endl<<endl;
+    }
+
+    cout<<"ATÉ MAIS!!!!!"<<endl<<endl;
+    return 0;
+}
+
