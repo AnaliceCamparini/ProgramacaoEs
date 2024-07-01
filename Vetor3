@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    const int tamanho=5;
+    float vetor[tamanho];
+    float media=0.0;
+    int i;
+    
+    
+    do{
+        if(i>=tamanho){
+            cout<<"Buffer lotado."<<endl;
+            i++;
+            break;
+        }
+        cout<<"Digite sua "<<(i+1)<< " nota: ";
+        cin>>vetor[i];
+        media += vetor[i];
+    }while(vetor[i++]>=0);
+    cout<<"A sua mÃ©dia total foi de: "<<(media/tamanho)<<endl<<endl;
+    
+    return 0;
+}
