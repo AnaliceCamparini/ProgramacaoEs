@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include<iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    const int ano=2024;
+    int nascimento, idade;
+    
+    cout<<"digite a sua idade: ";
+    cin>> idade;
+    nascimento= ano-idade;
+    cout<<"voce nasceu em: \n" <<nascimento;
+    return 0;
+}
