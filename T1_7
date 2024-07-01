@@ -1,0 +1,62 @@
+#include <cstdlib>
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    cout<<"****Cardapio****"<<endl<<endl;
+    cout<<"Cachorro quente"<<setw[10]<<"Codigo:100"<<setw[10]<<"Valor:R$9.20"<<endl;
+    cout<<"Bauru simples"<<setw[10]<<"Codigo:101"<<setw[10]<<"Valor:R$12.00"<<endl;
+    cout<<"Bauru com ovo"<<setw[10]<<"Codigo:102"<<setw[10]<<"Valor:R$13.00"<<endl;
+    cout<<"Hamburger"<<setw[10]<<"Codigo:103"<<setw[10]<<"Valor:R$10.00"<<endl;
+    cout<<"Cheeseburguer"<<setw[10]<<"Codigo:104"<<setw[10]<<"Valor:R$12.00"<<endl;
+    cout<<"Refrigerante lata"<<setw[10]<<"Codigo:105"<<setw[10]<<"Valor:R$5.00"<<endl;
+    cout<<"Agua"<<setw[10]<<"Codigo:106"<<setw[10]<<"Valor:R$3.00"<<endl<<endl;
+    
+    int cod,quant,valor;
+    
+    cout<<"Digite a opção do cardapio que deseja: ";
+    cin>>cod;
+    cout<<"Digite a quantidade que deseja do produto: ";
+    cin>>quant;
+    
+    switch(cod){
+        case 100:
+            valor=9.20*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        case 101:
+            valor=12*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        case 102:
+            valor=13*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        case 103:
+            valor=10*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        case 104:
+            valor=12*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        case 105:
+            valor=5*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        case 106:
+            valor=3*quant;
+            cout<<"O valor a ser apgo vai ser de: R$"<<valor<<endl;
+            break;
+        default :
+            cout<<"O codigo é invalido!"<<endl;
+            
+    }
+    
+
+    return 0;
+}
