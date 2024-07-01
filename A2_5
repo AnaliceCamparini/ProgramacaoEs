@@ -1,0 +1,25 @@
+
+
+#include <cstdlib>
+#include<cstring>
+#include<iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    char texto[]="Este exemplo busca por um determinado caracter dentre uma string";
+    char *ptr;
+    cout<<"Procurando pela letra 's' no texto: \n\n"<<texto<<endl<<endl;
+    ptr=strchr(texto,'s');
+    
+    if(*ptr){
+        cout<<"A letra 's' apareceu pela primeira vez na posicao"<<ptr-texto+1;
+    }
+    else{
+        cout<<"letra nÃ£o encontrada no texto.";
+    }
+    return 0;
+}
