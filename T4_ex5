@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int n,m;
+
+    cout << "Informe um numero: ";
+    cin>>n;
+    cout<<"Informe outro numero diferente: ";
+    cin>>m;
+
+    if(n>m){
+        for(int i=m;i<=n;i++){
+            cout<<"Numero: "<<i<<endl;
+        }
+    }
+    else{
+       for(int i=n;i<=m;i++){
+            cout<<"Numero: "<<i<<endl;
+        }
+    }
+    return 0;
+}
