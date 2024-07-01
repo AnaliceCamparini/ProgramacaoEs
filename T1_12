@@ -1,0 +1,22 @@
+#include <cstdlib>
+#include<iostream>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    float soma=0,media,num;
+    for(int i=0;i<20;i++){
+        cout<<"Insira um número: ";
+        cin>>num;
+        
+        soma= num + soma;
+        
+    }
+    media=soma/20;
+    cout<<"O total da soma foi: "<<soma<<endl;
+    cout<<"O total da media foi: "<<media<<endl;
+    
+    return 0;
+}
