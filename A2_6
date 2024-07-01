@@ -1,0 +1,17 @@
+
+#include <cstdlib>
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    char palavra[30];
+    cout<<"Exemplo para substituir uma palavra."<<endl;
+    cout<<"Digite uma palavra: ";
+    cin<<palavra;
+    cout<<"A palavra foi: "<<palavra<<".Se invertermos ela ficarÃ¡: "<<strset(palavra,'*')<<endl;
+    return 0;
+}
