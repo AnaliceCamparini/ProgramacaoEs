@@ -1,0 +1,26 @@
+#include <cstdlib>
+#include<iostream>
+#include<cstring>
+#define MIN 5 
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    int vetor[MIN]={10,20,30,40,60};
+    int vetor1[]={10,20,30,40,50,60,-1};
+    int i;
+    
+    cout<<"Vetor com tamanho prÃ© definido define: ";
+    for(i=0;i<MIN;i++){
+        cout<<"Vetor na posicao: "<< i <<",e o: "<<vetor[i]<<endl<<endl;
+        
+    }
+    cout<<"\n\nVetor termiando em -1: ";
+    for(i=0;vetor1[i]>0;i++){
+        cout<<"Vetor na posicao: "<<i<<",e o: "<<vetor1[i]<<endl<<endl;
+    }
+    
+    return 0;
+}
