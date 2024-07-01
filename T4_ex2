@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int cont,num;
+    num=1;
+    while(num!=0){
+        cout<<"Insira um número: ";
+        cin>>num;
+        cont++;
+    }
+    cout<<"Foram informados: "<<cont<<endl;
+    return 0;
+}
