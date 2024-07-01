@@ -1,0 +1,54 @@
+#include <iostream>
+#include<cstdlib>
+#include<locale>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+   setlocale(LC_ALL,"Portuguese");
+
+   float n1,n2, result;
+   int escolha;
+
+   cout<<"Insira o primeiro número: ";
+   cin>>n1;
+
+   cout<<"Insira o segundo número: ";
+   cin>>n2;
+
+   cout<<"*****ESCOLHA A FORMA DA OPERAÇÃO QUE DESEJA*****\n";
+   cout<<"1-Adição\n";
+   cout<<"2-Subtração\n";
+   cout<<"3-Mutiplicação\n";
+   cout<<"4-Divisão\n";
+   cout<<"Escolha: ";
+   cin>>escolha;
+
+   switch(escolha){
+    case 1:
+        result=n1+n2;
+        cout<<"O resultado é: "<<result;
+        break;
+
+    case 2:
+        result=n1-n2;
+        cout<<"O resultado é: "<<result;
+        break;
+
+    case 3:
+        result=n1*n2;
+        cout<<"O resultado é: "<<result;
+        break;
+
+    case 4:
+        result=n1/n2;
+        cout<<"O resultado é: "<<result;
+        break;
+
+    default:
+        cout<<"O valor é inválido\n";
+
+   }
+
+    return 0;
+}
